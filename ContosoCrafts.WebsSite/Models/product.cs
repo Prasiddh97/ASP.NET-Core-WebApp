@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace ContosoCrafts.WebsSite.Models
 {
-    public class product
+    public class Product
     {
         public string Id { get; set; }
         public string Maker { get; set; }
@@ -14,7 +14,7 @@ namespace ContosoCrafts.WebsSite.Models
         public string Description { get; set; }
         public int[] Ratings { get; set; }
 
-        public override string ToString => JsonSerializer.Serialize<product>(this);
+        public override string ToString() => JsonSerializer.Serialize<Product>(this);
 
     }
 }
